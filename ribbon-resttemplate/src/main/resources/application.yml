@@ -1,0 +1,11 @@
+server:
+  port: 9000 #端口
+spring:
+  application:
+    name: consumer-service #微服务名称
+eureka:
+  client:
+    service-url:
+      defaultZone:
+        #注册中心地址   高可用时添加多节点，逗号分割
+        http://server1:8761/eureka/,http://server2:8762/eureka/,http://server3:8763/eureka/
